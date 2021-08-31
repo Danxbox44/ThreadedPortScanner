@@ -55,7 +55,3 @@ for thread in thread_list:
 
 for thread in thread_list:
     thread.join()
-
-nmap_ports = str(open_ports).replace("[", "").replace("]", "").replace(" ",'')
-
-os.system(f"nmap -sC -T5 -sV -p {nmap_ports} {target}")
