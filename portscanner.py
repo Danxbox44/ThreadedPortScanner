@@ -13,14 +13,6 @@ target = input_target
 queue = Queue()
 open_ports = []
 
-opening_message = f"""
----------------------------------------------------
-Threaded port scanner made by Cyber44, Version 2.0! 
-Target: {target}
----------------------------------------------------
-"""
-print(opening_message)
-
 def portscan(port):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
